@@ -1,0 +1,28 @@
+{
+  "name": "rspack-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.23",
+    "@vueuse/core": "^11.1.0",
+    "socket.io-client": "^4.8.0",
+    "vue": "^3.5.8",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.7.1",
+    "@rsbuild/core": "1.0.5",
+    "@rsbuild/plugin-vue": "1.0.1",
+    "eslint": "^9.11.0",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.6.2",
+    "unplugin-auto-import": "^0.18.3"
+  }
+}
