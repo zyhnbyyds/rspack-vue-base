@@ -16,7 +16,7 @@ importers:
         version: 11.1.0(vue@3.5.8(typescript@5.6.2))
       lew-ui:
         specifier: ^2.4.3
-        version: 2.4.3(vue@3.5.8(typescript@5.6.2))
+        version: 2.4.5(vue@3.5.8(typescript@5.6.2))
       socket.io-client:
         specifier: ^4.8.0
         version: 4.8.0
@@ -309,25 +309,21 @@ packages:
     resolution: {integrity: sha512-svPOFlem7s6T33tX8a28uD5Ngc7bdML96ioiH7Fhi0J/at+WAthor4GeUNwkwuzBQI/Nc9XCgiYPcE0pzP7c6w==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-arm64-musl@1.0.5':
     resolution: {integrity: sha512-cysqogEUNc0TgzzXcK9bkv12eoCjqhLzOvGXQU1zSEU9Hov7tuzMDl3Z6R3A7NgOCmWu84/wOnTrkSOI28caew==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-x64-gnu@1.0.5':
     resolution: {integrity: sha512-qIEMsWOzTKpVm0Sg553gKkua49Kd/sElLD1rZcXjjxjAsD97uq8AiNncArMfYdDKgkKbtwtW/Fb3uVuafTLnZg==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-x64-musl@1.0.5':
     resolution: {integrity: sha512-yulltMSQN3aBt3NMURYTmJcpAJBi4eEJ4i9qF0INE8f0885sJpI0j35/31POkCghG1ZOSZkYALFrheKKP9e8pg==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-win32-arm64-msvc@1.0.5':
     resolution: {integrity: sha512-5oF/qN6TnUj28UAdaOgSIWKq7HG5QgI4p37zvQBBTXZHhrwN2kE6H+TaofWnSqWJynwmGIxJIx8bGo3lDfFbfA==}
@@ -1313,8 +1309,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  lew-ui@2.4.3:
-    resolution: {integrity: sha512-vCdcIrtSJVn4QCheC5fcIrJfakvmJViVeHiiZbWTcHMXUBxH0iDo8LT0zVz580/N59IhNf4HAREm2a/crEjzfg==}
+  lew-ui@2.4.5:
+    resolution: {integrity: sha512-2B35os5vlMY8DQRLyApARg0xPo+0VoYTw+Cp/weqwhLd2Z0cSMCSBDpedYlXs5ShkF0pmuK1LWF/O9Ly3ZKiqg==}
     peerDependencies:
       vue: ^3.5.3
 
@@ -3596,7 +3592,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  lew-ui@2.4.3(vue@3.5.8(typescript@5.6.2)):
+  lew-ui@2.4.5(vue@3.5.8(typescript@5.6.2)):
     dependencies:
       '@fancyapps/ui': 5.0.36
       '@highlightjs/vue-plugin': 2.1.0(highlight.js@11.10.0)(vue@3.5.8(typescript@5.6.2))
