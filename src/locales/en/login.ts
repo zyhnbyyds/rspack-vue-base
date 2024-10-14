@@ -16,4 +16,6 @@ export const enLogin = {
   send_email_verify_code: 'Send Email Verify Code',
   send_email_success: 'Send Email Success',
   send_email_fail: 'Send Email Fail',
+
+  re_send_email_verify_code: 'Re-send Email Verify Code',
 }
