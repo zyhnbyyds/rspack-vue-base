@@ -1,7 +1,9 @@
 <script lang='ts' setup></script>
 
 <template>
-  <div>about</div>
+  <div @click="$router.back()">
+    Back
+  </div>
 </template>
 
 <style scoped></style>

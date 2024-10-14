@@ -1,6 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { getToken } from '../utils/request'
 
-export const routes = [
+const constantRoutes = [
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/Login.vue'),
+  },
+]
+
+export const dynamicRoutes = [
   {
     path: '/',
     name: 'home',
@@ -13,7 +22,36 @@ export const routes = [
   },
 ]
 
+export const staticRoutes = [
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'notFound',
+    component: () => import('../views/NotFound.vue'),
+  },
+]
+
 export const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes: [
+    ...constantRoutes,
+    ...dynamicRoutes,
+    ...staticRoutes,
+  ],
+})
+
+router.beforeEach((to, _from, next) => {
+  const token = getToken()
+  if (to.name) {
+    if (!router.hasRoute(to.name)) {
+      console.log(router.hasRoute(to.name))
+
+      next({ name: 'notFound' })
+      return
+    }
+  }
+
+  if (to.path !== '/login' && !token)
+    next({ name: 'login' })
+  else
+    next()
 })

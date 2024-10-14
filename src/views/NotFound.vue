@@ -1,7 +1,7 @@
 <script lang='ts' setup></script>
 
 <template>
-  <div>Home</div>
+  <div>Not Found</div>
 </template>
 
 <style scoped></style>

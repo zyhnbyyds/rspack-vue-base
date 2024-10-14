@@ -2,5 +2,9 @@
 </script>
 
 <template>
-  <RouterView />
+  <v-responsive>
+    <v-app>
+      <RouterView />
+    </v-app>
+  </v-responsive>
 </template>

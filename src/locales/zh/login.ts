@@ -1,0 +1,20 @@
+export const zhLogin = {
+  username: '用户名',
+  password: '密码',
+  login: '登录',
+  register: '注册',
+  forget: '忘记密码',
+  remember: '记住我',
+  forget_password: '忘记密码',
+  register_account: '注册账户',
+  register_success: '注册成功',
+  register_fail: '注册失败',
+  login_success: '登录成功',
+  // email
+  email_address: '邮箱地址',
+  verify_code: '验证码(6位)',
+  email_login_title: '邮件登录',
+  send_email_verify_code: '发送邮件验证码',
+  send_email_success: '发送邮件成功',
+  send_email_fail: '发送邮件失败',
+}
