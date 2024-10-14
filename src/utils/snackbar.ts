@@ -1,9 +1,12 @@
-const snackbar = ref(false)
+import { useAppStore } from '../store/app'
 
-export function showMsg() {
-  snackbar.value = true
+const appStore = useAppStore()
+
+export function showMsg(message: string) {
+  appStore.$state.snackbarProps.visible = true
+  appStore.$state.snackbarProps.text = message
 }
 
 export function closeMsg() {
-  snackbar.value = false
+  appStore.$state.snackbarProps.visible = false
 }

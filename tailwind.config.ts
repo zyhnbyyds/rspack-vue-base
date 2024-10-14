@@ -5,6 +5,7 @@ const tailwindcssConfig: Config = {
   theme: {
     extend: {},
   },
+  important: true,
   plugins: [],
 }
 export default tailwindcssConfig

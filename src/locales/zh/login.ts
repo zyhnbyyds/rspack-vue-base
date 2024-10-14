@@ -17,4 +17,5 @@ export const zhLogin = {
   send_email_verify_code: '发送邮件验证码',
   send_email_success: '发送邮件成功',
   send_email_fail: '发送邮件失败',
+  re_send_email_verify_code: '重发验证码',
 }

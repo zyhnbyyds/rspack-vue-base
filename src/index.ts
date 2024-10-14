@@ -11,6 +11,7 @@ import '@mdi/font/css/materialdesignicons.css'
 
 const app = createApp(App)
 const pinia = createPinia()
+
 const i18n = createI18n({
   locale: '中文简体',
   fallbackLocale: '中文简体',

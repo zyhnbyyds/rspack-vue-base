@@ -11,7 +11,7 @@ const constantRoutes = [
 
 export const dynamicRoutes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: () => import('../views/Home.vue'),
   },
@@ -50,8 +50,13 @@ router.beforeEach((to, _from, next) => {
     }
   }
 
-  if (to.path !== '/login' && !token)
+  if (to.path !== '/login' && !token) {
     next({ name: 'login' })
-  else
+  }
+  else if (to.path === '/login' && token) {
+    next({ name: 'home' })
+  }
+  else {
     next()
+  }
 })
