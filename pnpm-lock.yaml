@@ -34,10 +34,10 @@ importers:
         version: 4.4.5(vue@3.5.12(typescript@5.6.3))
       vuetify:
         specifier: ^3.7.2
-        version: 3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3)
+        version: 3.7.3(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3)
       webpack-plugin-vuetify:
         specifier: ^3.0.3
-        version: 3.0.3(@vue/compiler-sfc@3.5.12)(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2)(webpack@5.95.0)
+        version: 3.0.3(@vue/compiler-sfc@3.5.12)(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.3)(webpack@5.95.0)
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^3.7.3
@@ -333,25 +333,21 @@ packages:
     resolution: {integrity: sha512-s+0AIGQQ2Npz3RcDQAFOLc4KYAZZ1g4oWxm2Ug7RSecwy7edK1uUDYE+boofEMgZ9+O3G5O+sXQr+SAyidS5EA==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-arm64-musl@1.0.10':
     resolution: {integrity: sha512-KSPLOHcUC+8zA134RTCqo5bDqmX4ZwFz4LL+n/5i9yugHoiQVplEzh2TkFCVoAH85Xc40qPhxqGLJlhHh5qGEA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-x64-gnu@1.0.10':
     resolution: {integrity: sha512-hiMIowGEUODn0LxV/Kc/oxHDXXSgu9BgPVZNprRTEZs3E7hHP4FX+YlzKafZ9G6qSY51GkiEDyEOb5X4Pq/eTw==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-x64-musl@1.0.10':
     resolution: {integrity: sha512-OKb1PLOIulkg83zFyeFPowIzF7WdYVO6yRK7l+Kkick/cvALOj5XzRHyxrsb8VfJMpzHrPwsLV0RcGRT18BPMw==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-win32-arm64-msvc@1.0.10':
     resolution: {integrity: sha512-J2fCPYgiPyLo4pGZMHT72lGHK05puBYJzpCR8CmVCk+ktkhVcao9cA2BUT3Gr3UG2PPxfBFsDDmjA/FsUEdxrg==}
@@ -2163,8 +2159,8 @@ packages:
       typescript:
         optional: true
 
-  vuetify@3.7.2:
-    resolution: {integrity: sha512-q0WTcRG977+a9Dqhb8TOaPm+Xmvj0oVhnBJhAdHWFSov3HhHTTxlH2nXP/GBTXZuuMHDbBeIWFuUR2/1Fx0PPw==}
+  vuetify@3.7.3:
+    resolution: {integrity: sha512-bpuvBpZl1/+nLlXDgdVXekvMNR6W/ciaoa8CYlpeAzAARbY8zUFSoBq05JlLhkIHI58AnzKVy4c09d0OtfYAPg==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       typescript: '>=4.7'
@@ -2789,11 +2785,11 @@ snapshots:
 
   '@vue/shared@3.5.12': {}
 
-  '@vuetify/loader-shared@2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3))':
+  '@vuetify/loader-shared@2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.3)':
     dependencies:
       upath: 2.0.1
       vue: 3.5.12(typescript@5.6.3)
-      vuetify: 3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3)
+      vuetify: 3.7.3(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3)
 
   '@vueuse/core@11.1.0(vue@3.5.12(typescript@5.6.3))':
     dependencies:
@@ -4656,22 +4652,22 @@ snapshots:
     optionalDependencies:
       typescript: 5.6.3
 
-  vuetify@3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3):
+  vuetify@3.7.3(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3):
     dependencies:
       vue: 3.5.12(typescript@5.6.3)
     optionalDependencies:
       typescript: 5.6.3
-      webpack-plugin-vuetify: 3.0.3(@vue/compiler-sfc@3.5.12)(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2)(webpack@5.95.0)
+      webpack-plugin-vuetify: 3.0.3(@vue/compiler-sfc@3.5.12)(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.3)(webpack@5.95.0)
 
   watchpack@2.4.2:
     dependencies:
       glob-to-regexp: 0.4.1
       graceful-fs: 4.2.11
 
-  webpack-plugin-vuetify@3.0.3(@vue/compiler-sfc@3.5.12)(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2)(webpack@5.95.0):
+  webpack-plugin-vuetify@3.0.3(@vue/compiler-sfc@3.5.12)(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.3)(webpack@5.95.0):
     dependencies:
       '@vue/compiler-sfc': 3.5.12
-      '@vuetify/loader-shared': 2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3))
+      '@vuetify/loader-shared': 2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.3)
       decache: 4.6.2
       file-loader: 6.2.0(webpack@5.95.0)
       find-cache-dir: 5.0.0
@@ -4680,7 +4676,7 @@ snapshots:
       null-loader: 4.0.1(webpack@5.95.0)
       upath: 2.0.1
       vue: 3.5.12(typescript@5.6.3)
-      vuetify: 3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3)
+      vuetify: 3.7.3(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3)
       webpack: 5.95.0
 
   webpack-sources@3.2.3: {}
