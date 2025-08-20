@@ -19,7 +19,7 @@ importers:
         version: 1.4.1
       pinia:
         specifier: ^2.2.4
-        version: 2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
+        version: 2.3.1(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))
       socket.io-client:
         specifier: ^4.8.0
         version: 4.8.0
@@ -333,25 +333,21 @@ packages:
     resolution: {integrity: sha512-s+0AIGQQ2Npz3RcDQAFOLc4KYAZZ1g4oWxm2Ug7RSecwy7edK1uUDYE+boofEMgZ9+O3G5O+sXQr+SAyidS5EA==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-arm64-musl@1.0.10':
     resolution: {integrity: sha512-KSPLOHcUC+8zA134RTCqo5bDqmX4ZwFz4LL+n/5i9yugHoiQVplEzh2TkFCVoAH85Xc40qPhxqGLJlhHh5qGEA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-x64-gnu@1.0.10':
     resolution: {integrity: sha512-hiMIowGEUODn0LxV/Kc/oxHDXXSgu9BgPVZNprRTEZs3E7hHP4FX+YlzKafZ9G6qSY51GkiEDyEOb5X4Pq/eTw==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-x64-musl@1.0.10':
     resolution: {integrity: sha512-OKb1PLOIulkg83zFyeFPowIzF7WdYVO6yRK7l+Kkick/cvALOj5XzRHyxrsb8VfJMpzHrPwsLV0RcGRT18BPMw==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-win32-arm64-msvc@1.0.10':
     resolution: {integrity: sha512-J2fCPYgiPyLo4pGZMHT72lGHK05puBYJzpCR8CmVCk+ktkhVcao9cA2BUT3Gr3UG2PPxfBFsDDmjA/FsUEdxrg==}
@@ -1681,15 +1677,12 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
-  pinia@2.2.4:
-    resolution: {integrity: sha512-K7ZhpMY9iJ9ShTC0cR2+PnxdQRuwVIsXDO/WIEV/RnMC/vmSoKDTKW/exNQYPI+4ij10UjXqdNiEHwn47McANQ==}
+  pinia@2.3.1:
+    resolution: {integrity: sha512-khUlZSwt9xXCaTbbxFYBKDc/bWAGWJjOgvxETwkTN7KRm66EeT1ZdZj6i2ceh9sP2Pzqsbc704r2yngBrxBVug==}
     peerDependencies:
-      '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.3.0
+      vue: ^2.7.0 || ^3.5.11
     peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
       typescript:
         optional: true
 
@@ -2789,7 +2782,7 @@ snapshots:
 
   '@vue/shared@3.5.12': {}
 
-  '@vuetify/loader-shared@2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3))':
+  '@vuetify/loader-shared@2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2)':
     dependencies:
       upath: 2.0.1
       vue: 3.5.12(typescript@5.6.3)
@@ -4146,13 +4139,15 @@ snapshots:
 
   pify@2.3.0: {}
 
-  pinia@2.2.4(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)):
+  pinia@2.3.1(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.12(typescript@5.6.3)
       vue-demi: 0.14.10(vue@3.5.12(typescript@5.6.3))
     optionalDependencies:
       typescript: 5.6.3
+    transitivePeerDependencies:
+      - '@vue/composition-api'
 
   pirates@4.0.6: {}
 
@@ -4671,7 +4666,7 @@ snapshots:
   webpack-plugin-vuetify@3.0.3(@vue/compiler-sfc@3.5.12)(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2)(webpack@5.95.0):
     dependencies:
       '@vue/compiler-sfc': 3.5.12
-      '@vuetify/loader-shared': 2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2(typescript@5.6.3)(vue@3.5.12(typescript@5.6.3))(webpack-plugin-vuetify@3.0.3))
+      '@vuetify/loader-shared': 2.0.3(vue@3.5.12(typescript@5.6.3))(vuetify@3.7.2)
       decache: 4.6.2
       file-loader: 6.2.0(webpack@5.95.0)
       find-cache-dir: 5.0.0
